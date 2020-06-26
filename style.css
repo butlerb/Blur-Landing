@@ -24,7 +24,7 @@ img {
 }
 
 
-/*Styles*/
+/*Showcase Styles*/
 
 body {
 	background: rgba(0, 0, 0, 0.9);
@@ -58,7 +58,7 @@ body {
 	top: 10%;
 	left: 50%;
 	margin-top: 105px;
-	margin-left: -145px;
+	margin-left: -150px;
 	width: 300px;
 	height: 350px;
 	text-align: center;
@@ -84,6 +84,123 @@ body {
 
 }
 
+
+@media (min-width: 560px){
+	.showcase::after {
+		height: 50vh;
+	}
+	.content {
+		top: 2%;
+		margin-top: 5px;
+	}
+
+	.content .logo {
+		height: 140px;
+		width: 140px;
+	}
+
+
+}
+
+/*lanscape*/
+@media (max-height:500px){
+	.content .title, .content .text {
+		display:none;
+	}
+
+}
+
+
+/*Utility class*/
+
 .container {
 	max-width: 960px;
+	margin: auto;
+	padding: 1rem 1rem;
+	overflow: hidden;
+
+}
+
+/*Services styles*/
+
+.youtube {
+	 line-height: 2.5rem;
+}
+
+.courses{
+	line-height: 2.5rem;
+}
+
+.freelancing{
+	line-height: 2.5rem;
+
+}
+
+.icon-you{
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.icon-courses{
+	margin-bottom: 2rem;
+	text-align: center;
+
+}
+
+.icon-freelancing{
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+@media screen and (min-width: 560px) {
+.grid-3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	}
+
+}
+
+
+/*About us styles*/
+
+.bg-light {
+	background: #fff;
+}
+
+.about-us {
+	color: Black;
+}
+
+.title-about {
+	line-height: 2.5rem;
+
+}
+
+.icon-laptop {
+	margin-bottom: 2rem;
+	text-align: center;
+
+}
+
+.text-about {
+	margin-bottom: 2rem;
+	text-align: center;
+
+}
+
+
+@media screen and (min-width: 560px){
+	.grid-2{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+	}
+}
+
+
+
+
+/*Footer styles*/
+.copyright {
+	text-align: center;
 }
